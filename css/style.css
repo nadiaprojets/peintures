@@ -1,0 +1,202 @@
+/* GÉNÉRAL */
+html, body{
+  margin : 0; padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* EN TÊTE */
+header{
+  background-color: rgb(20, 20, 20);
+  padding: 40px;
+  color: rgb(139, 139, 139);
+  margin-bottom: 30px;
+}
+/* BARRE DE NAVIGATION */
+nav{
+  float: right;
+  padding-top: 40px;
+}
+nav li a{
+  color: rgb(139, 139, 139);
+  text-decoration: none;
+}
+nav li a:hover{
+  color: rgb(167, 167, 167);
+}
+nav #active a{
+  color: rgb(224, 224, 224);
+}
+nav ul, #footer-links ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0
+}
+nav li, #footer-links li{
+  margin: 0 5px;
+  display: inline-block;
+}
+/* CORPS DU SITE */
+body{
+    background-color: rgb(27, 27, 27);
+}
+/* TITRE DU SITE */
+h1{
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Manrope', sans-serif;
+  margin-top: 70px;
+  color: rgb(133, 121, 104);
+  font-size: 50px;
+}
+/* DÉBUT DU FORMULAIRE DE CONTACT*/
+label{
+  color: rgb(126, 126, 126);
+  font-size: 20px;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(136, 136, 136);
+  border-radius: 6px;
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical 
+}
+input[type=submit] {
+  background-color: rgb(100, 100, 100);
+  color: rgb(190, 190, 190);
+  font-size: 15px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 200px;
+}
+input[type=submit]:hover {
+  background-color: rgb(136, 134, 134);
+}
+input{
+  background-color: rgb(184, 183, 183);
+}
+textarea{
+  background-color: rgb(184, 183, 183);
+}
+select{
+  background-color: rgb(184, 183, 183);
+}
+.container3 {
+  border-radius: 6px;
+  background-color: rgb(44, 43, 43);
+  padding: 20px;
+  margin-top: 30px;
+}
+/*FIN DU FORMULAIRE DE CONTACT */
+
+/*PIED DE PAGE*/
+footer{
+  border-top: 1px solid rgb(82, 82, 82);
+  padding: 50px 30px;
+  color: rgb(165, 165, 165);
+  font-size: .8em;
+  margin-top: 30px;
+  background-color: rgb(20, 20, 20);
+}
+footer #footer-links{
+  float: center;
+  text-align: center;
+}
+footer #footer-links p{
+  margin-top: 0;
+  padding-right: 5px;
+}
+footer #footer-links a{
+  color: rgb(165, 165, 165);
+  text-decoration: none;
+}
+footer #footer-links a:hover{
+  color: rgb(175, 174, 172);
+}
+/*FIN DE PIED DE PAGE*/
+
+#section{
+  text-align: center;
+}
+.tableaux{
+  width: 360px;
+  display: inline-block; 
+}
+.tableaux img{
+  width: 50%;
+}
+.zoom img:hover {
+  position: absolute;
+  display: block;
+  margin:0;
+  width:700px;
+  z-index: 2;
+}
+.container{
+  width: 800px;
+  margin: 0 auto;
+}
+.container1{
+  border-radius: 6px;
+  padding: 20px;
+  margin-top: 30px;
+}
+.container2{
+  border-radius: 6px;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+}
+.container4{
+  border-radius: 6px;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  margin-top: 30px;
+}
+.peinture{
+  width: 190px;
+  height: 190px;
+  margin: 15px;
+  display: inline-block;
+}
+.peinture img{
+  width: 100%;
+}
+.image span {
+    visibility: hidden;
+}
+.image img:hover + span {
+    visibility: visible;
+}
+#fname::placeholder{
+    color: rgb(114, 112, 112);
+}
+#lname::placeholder{
+    color: rgb(114, 112, 112);
+}
+#subject::placeholder{
+    color: rgb(114, 112, 112);
+}
+#country{
+  color: rgb(114, 112, 112);
+}
+/* MEDIAS QUERIES*/
+@media all and (max-width: 860px){
+  .container{
+    width: 500px;
+  } 
+}
+@media all and (max-width: 560px){
+  .container{
+    width: 100%;
+  }
+}
+@media all and (max-width: 360px){
+  /* HEADER*/
+  header .container { text-align: center;}
+  nav {float: none;}
+  /*FOOTER*/
+  footer .container {text-align: center;}
+  footer #footer-links {float: none; text-align: center;}
+}
